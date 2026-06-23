@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css" />
+
+<style>
+  body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  header{
+    background-color: green;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    marging:0px;
+    border-bottom: 2px solid black;
+
+  }
+
+   #top-heading{
+    color: orange;
+    border-bottom: 2px solid black;
+  }
+
+  .heading-1{
+    color: red ;
+   
+  }
+
+ 
+
+  .heading-2{
+    color: blue;
+     border: 2px solid red;
+     padding: 10px 20px 50px 20px;
+     margin-top: 30px;
+  }
+</style>
+
+  </head>
+  <body>
+    <header>
+      <a href="./about.html">logo</a>
+      <nav>
+        <a href="./about.html">About</a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+    </header>
+
+
+    <main>
+      <section class="hero">
+        <h2 class="heading-1" id="top-heading">TOP level heading</h2>
+        <h3 class="heading-2">Subheading </h3>
+
+        <span>  span 1 element</span>
+        <span>  span 2 element</span>
+        <p class = "heading-1">This is the hero section of the page.</p>
+      <img src="../assets/images/my_pic.jpg"  alt="Hero Image"  width="300px" height="300px"/> 
+<br>
+      <video src="../assets/videos/my_video.mp4" controls width="300px" height="300px"></video>
+      </section>
+      <section class="features">
+        <h2 class="heading-1">Features</h2>
+        <ul>
+          <li>Feature 1</li>
+          <li>Feature 2</li>
+          <li>Feature 3</li>
+        </ul>
+      </section>
+      <section class="testimonials">
+        <h2>Testimonials</h2>
+        <blockquote>
+          <p>This is a testimonial from a satisfied customer.</p>
+          <footer>- John Doe</footer>
+        </blockquote>
+      </section>
+      section class="contact">
+        <h2 class="heading-2">Contact Us</h2>
+        <form action="/submit" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+      
+    </main>
+
+    <details></details>
+    datalist
+    
+
+    <footer>
+      <p>Copyright &copy; 2024</p>
+      
+    </footer>
+  </body>
+</html>
