@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css position</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        position: relative;
+        width: 300px;
+        height: 200px;
+        border: 1px solid #ccc;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #000;
+      }
+      .box1 {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+      }
+      .box2 {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+      }
+      .box3 {
+        position: absolute;
+        bottom: 10px;
+        left: 100px;
+      }
+      header {
+        position: sticky;
+        top: 0;
+        background-color: #f1f1f1;
+        padding: 10px;
+        text-align: center;
+        border-bottom: 1px solid #ccc;
+      }
+      .content {
+        height: 1500px;
+        padding: 20px;
+      }
+      /* media queries for responsive design */
+      @media (max-width: 768px) {
+        .container {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- css position  -->
+
+    <div class="container">
+      <div class="box box1">Box 1</div>
+      <div class="box box2">Box 2</div>
+      <div class="box box3">Box 3</div>
+    </div>
+
+    <!-- sticky position -->
+    <header>
+      <h1>Sticky Position Example</h1>
+    </header>
+    <div class="content">
+      <p>Scroll down to see the sticky effect.</p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum.
+      </p>
+
+      <!-- background video for hero section -->
+      <div
+        background-video
+        style="position: relative; width: 100%; overflow: hidden"
+      >
+        <video
+          autoplay
+          muted
+          loop
+          style="width: 100%; height: auto; object-fit: cover"
+        >
+          <source
+            src="https://www.w3schools.com/howto/rain.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support HTML5 video.
+        </video>
+        <h1
+          style="
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            background-color: rgba(0, 0, 0, 0.2);
+            padding: 10px;
+            text-align: center;
+          "
+        >
+          Background Video Example
+        </h1>
+        <p
+          style="
+            position: absolute;
+            top: 57%;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            background-color: rgba(0, 0, 0, 0.2);
+            padding: 10px;
+            text-align: center;
+          "
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+          eiusmod tempor incididunt ut labore et dolore
+        </p>
+      </div>
+    </div>
+
+    <!-- fixed position -->
+    <div
+      style="
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        background-color: #f1f1f1;
+        padding: 10px;
+        border: 1px solid #ccc;
+      "
+    >
+      Fixed Position Box
+    </div>
+  </body>
+</html>
